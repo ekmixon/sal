@@ -10,7 +10,7 @@ services:
       - "80:80"
       - "443:443"
   sal:
-    # image: macadmins/sal
+    image: shea/sal_fancy_gunicorn:1.0
     build: .
     ports:
       - "8000:8000"
@@ -21,7 +21,7 @@ services:
       - DB_NAME=sal
       - DB_USER=admin
       - DB_PASS=password
-      - DOCKER_SAL_DEBUG=true
+        #- DOCKER_SAL_DEBUG=true
       - WAIT_FOR_POSTGRES=true
   db:
     image: grahamgilbert/postgres:9.4.5

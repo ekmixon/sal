@@ -2,7 +2,7 @@ Django==3.0.7
 django-bootstrap3==12.0.3
 django-debug-toolbar==1.5
 django-filter==2.2.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 idna==2.7
 # Required for DRF
 markdown==3.2.1
